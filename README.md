@@ -38,6 +38,7 @@ Theoretically, any recent laptop running Windows 11, Linux, or MacOS should do.
 I tested on the following environments:
 - Windows 11 24H2 (Version 10.0.26100.2161)
 - Ubuntu 22.04.5 LTS (Windows Subsystem for Linux version 2.3.24.0)
+- Mac M2 Pro 
 
 
 ### Evaluation board
@@ -94,6 +95,11 @@ arm-none-eabi-gcc --version
 winget install --id=Arm.GnuArmEmbeddedToolchain  -e
 winget install --id=Ninja-build.Ninja  -e
 winget install --id=Kitware.CMake  -e
+```
+
+**Mac**
+```bash
+brew install --cask gcc-arm-embedded
 ```
 
 ## Compiling and running the application
